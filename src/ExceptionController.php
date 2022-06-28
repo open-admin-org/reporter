@@ -2,13 +2,13 @@
 
 namespace OpenAdmin\Admin\Reporter;
 
+use Illuminate\Http\JsonResponse;
 use OpenAdmin\Admin\Controllers\ModelForm;
 use OpenAdmin\Admin\Facades\Admin;
 use OpenAdmin\Admin\Grid;
 use OpenAdmin\Admin\Layout\Content;
-use OpenAdmin\Admin\Reporter\Tracer\Parser;
 use OpenAdmin\Admin\Reporter\Actions\ViewReport;
-use Illuminate\Http\JsonResponse;
+use OpenAdmin\Admin\Reporter\Tracer\Parser;
 
 class ExceptionController
 {
