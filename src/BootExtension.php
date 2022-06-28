@@ -2,8 +2,8 @@
 
 namespace OpenAdmin\Admin\Reporter;
 
-use OpenAdmin\Admin\Admin;
 use Illuminate\Routing\Router;
+use OpenAdmin\Admin\Admin;
 
 trait BootExtension
 {
