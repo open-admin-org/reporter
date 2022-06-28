@@ -7,17 +7,17 @@
 
 code[class*="language-"],
 pre[class*="language-"] {
-	color: black;
+	color: #FFF;
 	background: none;
-	text-shadow: 0 1px white;
+	text-shadow: 0 1px black;
 	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-weight:200;
 	text-align: left;
 	white-space: pre;
 	word-spacing: normal;
 	word-break: normal;
 	word-wrap: normal;
-	line-height: 1.5;
-
+	line-height: 1.7;
 	-moz-tab-size: 4;
 	-o-tab-size: 4;
 	tab-size: 4;
@@ -56,7 +56,7 @@ pre[class*="language-"] {
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-	background: #f5f2f0;
+	background: #263544;
 }
 
 /* Inline code */
@@ -70,14 +70,14 @@ pre[class*="language-"] {
 .token.prolog,
 .token.doctype,
 .token.cdata {
-	color: slategray;
+	color: hsl(30, 20%, 50%);
 }
 
 .token.punctuation {
-	color: #999;
+	opacity: .7;
 }
 
-.namespace {
+.token.namespace {
 	opacity: .7;
 }
 
@@ -86,9 +86,8 @@ pre[class*="language-"] {
 .token.boolean,
 .token.number,
 .token.constant,
-.token.symbol,
-.token.deleted {
-	color: #905;
+.token.symbol {
+	color: hsl(350, 40%, 70%);
 }
 
 .token.selector,
@@ -97,32 +96,44 @@ pre[class*="language-"] {
 .token.char,
 .token.builtin,
 .token.inserted {
-	color: #690;
+	color: hsl(75, 70%, 60%);
 }
 
 .token.operator,
 .token.entity,
 .token.url,
 .language-css .token.string,
-.style .token.string {
-	color: #a67f59;
-	background: hsla(0, 0%, 100%, .5);
+.style .token.string,
+.token.variable {
+	color: hsl(40, 90%, 60%);
+	background:none;
 }
 
 .token.atrule,
 .token.attr-value,
 .token.keyword {
-	color: #07a;
-}
-
-.token.function {
-	color: #DD4A68;
+	color: hsl(350, 40%, 70%);
 }
 
 .token.regex,
-.token.important,
-.token.variable {
+.token.important {
 	color: #e90;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+
+.token.deleted {
+	color: red;
 }
 
 .token.important,
@@ -149,8 +160,8 @@ pre[data-line] {
 	padding: inherit 0;
 	margin-top: 1em; /* Same as .prism’s padding-top */
 
-	background: hsla(24, 20%, 50%,.08);
-	background: linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
+	background: rgba(151, 151, 151, 0.1);
+	background: linear-gradient(to right, rgba(151, 151, 151, 0.1) 70%, rgba(151, 151, 151, 0));
 
 	pointer-events: none;
 

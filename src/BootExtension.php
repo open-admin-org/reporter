@@ -34,7 +34,7 @@ trait BootExtension
      */
     public static function import()
     {
-        parent::createMenu('Exception Reporter', 'exceptions', 'fa-bug');
+        parent::createMenu('Exception Reporter', 'exceptions', 'icon-bug');
 
         parent::createPermission('Exceptions reporter', 'ext.reporter', 'exceptions*');
     }

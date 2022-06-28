@@ -7,6 +7,7 @@ use OpenAdmin\Admin\Facades\Admin;
 use OpenAdmin\Admin\Grid;
 use OpenAdmin\Admin\Layout\Content;
 use OpenAdmin\Admin\Reporter\Tracer\Parser;
+use OpenAdmin\Admin\Reporter\Actions\ViewReport;
 use Illuminate\Http\JsonResponse;
 
 class ExceptionController
@@ -54,7 +55,7 @@ class ExceptionController
                 $color = ExceptionModel::$methodColor[$this->method];
 
                 return sprintf(
-                    '<span class="label bg-%s">%s</span><code>%s</code>',
+                    '<span class="badge bg-%s me-2">%s</span><code>%s</code>',
                     $color,
                     $this->method,
                     $this->path
@@ -82,11 +83,9 @@ class ExceptionController
 
             $grid->disableCreation();
 
-            $grid->actions(function (Grid\Displayers\Actions $actions) {
+            $grid->actions(function (Grid\Displayers\Actions\Actions $actions) {
                 $actions->disableEdit();
-
-                $path = $actions->getResource().'/'.$actions->getKey();
-                $actions->prepend("<a href=\"$path\"><i class=\"fa fa-search-minus\"></i></a>");
+                //$actions->pre(new ViewReport()); // if you want an extra button
             });
         });
     }
