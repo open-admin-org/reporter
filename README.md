@@ -5,7 +5,7 @@ This tool stores the exception information into the database and provides a deve
 
 [![StyleCI](https://styleci.io/repos/508366116/shield?branch=main)](https://styleci.io/repos/508366116)
 [![Packagist](https://img.shields.io/github/license/open-admin-org/reporter.svg?maxAge=2592000&style=flat-square&color=brightgreen)](https://packagist.org/packages/open-admin-ext/reporter)
-[![Total Downloads](https://img.shields.io/packagist/dt/open-admin-ext/reporter.svg?style=flat-square&color=brightgreen)](https://packagist.org/packages/open-admin-admin-ext/reporter)
+[![Total Downloads](https://img.shields.io/packagist/dt/open-admin-ext/reporter.svg?style=flat-square&color=brightgreen)](https://packagist.org/packages/open-admin-ext/reporter)
 [![Pull request welcome](https://img.shields.io/badge/pr-welcome-green.svg?style=flat-square&color=brightgreen)]()
 
 ## Screenshot
