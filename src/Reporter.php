@@ -2,9 +2,9 @@
 
 namespace OpenAdmin\Admin\Reporter;
 
-use OpenAdmin\Admin\Extension;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
+use OpenAdmin\Admin\Extension;
 use Throwable;
 
 class Reporter extends Extension

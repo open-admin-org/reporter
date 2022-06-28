@@ -2,8 +2,8 @@
 
 namespace OpenAdmin\Admin\Reporter\Tracer;
 
-use Illuminate\Support\Str;
 use Illuminate\Support\Arr;
+use Illuminate\Support\Str;
 
 class Frame
 {

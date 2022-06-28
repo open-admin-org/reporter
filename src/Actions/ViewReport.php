@@ -3,7 +3,6 @@
 namespace OpenAdmin\Admin\Reporter\Actions;
 
 use OpenAdmin\Admin\Actions\RowAction;
-use Illuminate\Database\Eloquent\Model;
 
 class ViewReport extends RowAction
 {
@@ -13,6 +12,7 @@ class ViewReport extends RowAction
     public function render()
     {
         $path = $this->getResource().'/'.$this->getKey();
+
         return "<a href=\"$path\"><i class=\"icon-search-plus\"></i></a>";
     }
 }
